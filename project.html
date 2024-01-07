@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe's Portfolio</title>
+    <style>
+        body {
+            font-family: roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed; /* Add this line */
+    top: 0;            /* Add this line */
+    width: 100%;       /* Add this line */
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.content {
+    padding-top: 50px;
+}
+.section {
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+.recommendation-form {
+    margin-top: 20px;
+}
+.recommendation-form input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.recommendation-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.recommendation-form button:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#aboutme" class="active">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+    </div>
+    <div class="content">
+        <div id="aboutme" class="section">
+            <h1>About Me</h1>
+            <img src="client_profile_picture.jpg" alt="Profile Picture">
+            <p>My name is Jane Doe, and I am a software engineer with 4 years of experience. I specialize in developing web applications using JavaScript, React, and Node.js.</p>
+        </div>
+        <div id="skills" class="section">
+            <h1>Skills</h1>
+            <ul>
+                <li><img src="js.png" alt="JavaScript"> JavaScript</li>
+                <li><img src="react.png" alt="React"> React</li>
+                <li><img src="nodejs.png" alt="Node.js"> Node.js</li>
+            </ul>
+        </div>
+        <div id="projects" class="section">
+            <h1>Projects</h1>
+            <ul>
+                <li>Online Store: Built an e-commerce website using React and Redux for state management.</li>
+                <li>Blog Website: Developed a responsive blog website using React and Express.js for server-side rendering.</li>
+                <li>Weather App: Created a weather app using Node.js and OpenWeatherMap API to fetch weather data.</li>
+            </ul>
+        </div>
+        <div id="recommendations" class="section">
+            <h1>Recommendations</h1>
+            <div class="recommendation-form">
+                <form action="/submit_recommendation" method="post
